@@ -69,12 +69,6 @@ async leer(dato:HTMLInputElement, password:HTMLInputElement)
     this.datos =  this.api.datos;
     localStorage.setItem(dato.value,JSON.stringify(this.datos))
     console.log(this.datos)
-
-    await this.api.getPost(id)
-    this.datos =  this.api.datos;
-    console.log(this.datos)
-
-    this.router.navigateByUrl('listadoposts');
     }
 
     //Validacion Validacion Samantha
